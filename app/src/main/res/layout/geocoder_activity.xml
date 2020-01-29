@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/search"/>
+                <EditText
+                    android:id="@+id/inputbuilding"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:background="#fdfdfd"
+                    android:hint="请输入所在建筑物"
+                    android:textColorHint="@color/searchBuildingInputTextColor"></EditText>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/geoButtonbuilding"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:layout_gravity="center"
+                android:text="确定"
+                android:textColor="@color/submit"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/submit_button_color"
+                android:textSize="16dp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|bottom">
+            <Button
+                android:id="@+id/giftbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="40dp"
+                android:textSize="15dp"
+                android:background="@drawable/circle_edit"
+                android:text="传位置\n得礼券" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

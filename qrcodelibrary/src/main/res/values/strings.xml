@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QRCodeLibrary</string>
+
+    <string name="scan_text">放入框内, 自动扫描</string>
+</resources>

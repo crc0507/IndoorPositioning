@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/elevator"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/selector_elevator" />
+
+        <ImageView
+            android:id="@+id/escalator"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/selector_escalator" />
+
+        <ImageView
+            android:id="@+id/stair"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/selector_stair" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        >
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        </com.amap.api.maps.MapView>
+        <!-- <fragment
+             android:id="@+id/indoor_map"
+             android:name="com.amap.api.im.view.IMIndoorMapFragment"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />-->
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1" />
+        <!-- 更多和箭头 -->
+        <RelativeLayout
+            android:id="@+id/show_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/text_content"
+            android:layout_marginTop="3dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="34dip"
+                android:text="更多"
+                android:textColor="#999"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/spread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/down_arrow" />
+
+            <ImageView
+                android:id="@+id/shrink_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/up_arrow"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ad1" />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="340dp"
+
+            app:srcCompat="@drawable/cancel" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

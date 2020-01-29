@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jizhimeicrc.map1.Building">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_edittext">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/search"/>
+                    <EditText
+                        android:id="@+id/inputplace"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4"
+                        android:background="#fdfdfd"
+                        android:hint="请输入目的地"
+                        android:textColorHint="@color/searchBuildingInputTextColor">
+                    </EditText>
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/geoButtonplace"
+                    android:layout_width="15dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/submit"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/submit_button_color"
+                    android:textSize="16dp"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/typebutton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="40dp"
+            android:text="分类导览"
+            android:textSize="15dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/circle_edit"/>
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_award"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16px"
+    android:paddingLeft="16px"
+    android:paddingRight="16px"
+    android:paddingTop="16px">
+
+    <TextView
+        android:text="感谢您的提交，请截图记录优惠券ID并到相对应的店铺进行使用。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_marginTop="33dp"
+        android:id="@+id/awardImg"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="400dp"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/awardImg"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/awardID"
+        android:textSize="24sp"/>
+
+    <Button
+        android:text="完成"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/awardID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:id="@+id/done"
+        android:background="@android:color/holo_blue_light"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
